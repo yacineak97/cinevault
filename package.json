@@ -1,26 +1,37 @@
 {
-  "name": "step01",
-  "private": true,
-  "scripts": {
-    "start": "meteor run",
-    "test": "meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
-    "visualize": "meteor --production --extra-packages bundle-visualizer"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.15.4",
-    "bcrypt": "^5.0.1",
-    "jquery": "^3.6",
-    "meteor-node-stubs": "^1.2.3"
-  },
-  "meteor": {
-    "mainModule": {
-      "client": "client/main.js",
-      "server": "server/main.js"
-    },
-    "testModule": "tests/main.js"
-  },
-  "devDependencies": {
-    "chai": "^4.3.4"
-  }
+	"name": "imdb",
+	"private": true,
+	"scripts": {
+		"start": "meteor run",
+		"test": "meteor test --once --driver-package meteortesting:mocha",
+		"test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+		"visualize": "meteor --production --extra-packages bundle-visualizer"
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.26.0",
+		"autoprefixer": "^10.4.21",
+		"bcrypt": "^5.1.1",
+		"meteor-node-stubs": "^1.2.12",
+		"postcss": "^8.5.3",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-router": "^6.30.1",
+		"react-router-dom": "^6.30.1",
+		"tailwindcss": "^3.4.17"
+	},
+	"devDependencies": {
+		"@types/meteor": "^2.9.11",
+		"@types/react": "^19.1.0",
+		"@types/react-dom": "^19.1.0",
+		"chai": "^4.5.0",
+		"sass": "^1.100.0",
+		"typescript": "^5.8.3"
+	},
+	"meteor": {
+		"mainModule": {
+			"client": "client/main.tsx",
+			"server": "server/main.ts"
+		},
+		"testModule": "tests/main.js"
+	}
 }
