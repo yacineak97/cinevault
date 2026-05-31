@@ -24,22 +24,32 @@ try {
 // Make sure the npm finds this exact version of node in its $PATH.
 var binDir = path.dirname(process.execPath);
 process.env.PATH = binDir + path.delimiter + process.env.PATH;
-var npmCli = require('npm/bin/npm-cli.js');
+var npmCmd = 'npm';
 var shell = false;
+if (process.platform === 'win32') {
+	npmCmd = 'npm.cmd';
+	shell = true;
+}
 function rebuild(i) {
 	var dir = rebuilds && rebuilds[i];
 	if (!dir) {
 		// Print Node/V8/etc. versions for diagnostic purposes.
-		spawn(process.execPath, [npmCli, 'version', '--json'], {
+		spawn(npmCmd, ['version', '--json'], {
 			stdio: 'inherit',
 			shell,
 		});
 		return;
 	}
-	spawn(process.execPath, [npmCli, ...rebuildArgs], {
+	spawn(npmCmd, rebuildArgs, {
 		cwd: path.join(__dirname, dir),
 		stdio: 'inherit',
 		shell,
+	}).on('exit', function (code) {
+		if (code !== 0) {
+			process.exit(code);
+		} else {
+			rebuild(i + 1);
+		}
 	});
 }
 rebuild(0);
