@@ -1,0 +1,55 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "c1d929905536d99aa14e1a46d7cd1798f70c22f6.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/c1d929905536d99aa14e1a46d7cd1798f70c22f6.js?meteor_js_resource=true",
+      "size": 677550,
+      "hash": "c1d929905536d99aa14e1a46d7cd1798f70c22f6",
+      "sri": "N2YNyWwn3LWm1rol1jhzY9NRN9UKxy7tk9Pp2W9S0BPLFeins0C6UeUV8OjhiFv+BEHC/6yA9YK4VitAKTAymQ=="
+    },
+    {
+      "path": "c1d929905536d99aa14e1a46d7cd1798f70c22f6.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/c1d929905536d99aa14e1a46d7cd1798f70c22f6.stats.json?meteor_js_resource=true",
+      "size": 18694,
+      "hash": "84776e40b14c8cff736e1a38799068f74597e367",
+      "sri": "L574kaVtOVdjlvz9nXEiA5jcSwoEh/AeTUfX95p+HiYURA7cUUZRWQbHJ3Mzwdjf8cEU3V8TF4O6qCooSwExUw=="
+    },
+    {
+      "path": "2fd14a52fd01bb05c95189d6fcd88d8c57cd4faf.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/2fd14a52fd01bb05c95189d6fcd88d8c57cd4faf.css?meteor_css_resource=true",
+      "size": 18590,
+      "hash": "2fd14a52fd01bb05c95189d6fcd88d8c57cd4faf",
+      "sri": "9uPy0mOX498xfXYOUdRKU1NL2C7Iq9hM0uzAwgrshJJ7k31CQMzq3yOxu0lGD+VTcYsKbspGSoIb3jK0OJpnTg=="
+    },
+    {
+      "path": "packages/promise/promise.d.ts",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/promise/promise.d.ts",
+      "size": 633,
+      "hash": "4aa461da7ad90c74a51ddfccc84b055fc0403119",
+      "sri": "6MVw86BmnkmTtXXlCxaH8k7xIUcMZK4O57Nnu82uI5MJT9Fbru7Yv71SuHx+giKUM9wkRs7WkpqPWjADS+U2qw=="
+    },
+    {
+      "path": "packages/tracker/tracker.d.ts",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/tracker/tracker.d.ts",
+      "size": 6096,
+      "hash": "93ebe1d7d6aed2b029129079014e3ebfd5e8bb8c",
+      "sri": "D7pwjdFz5YPTxAyDXrqMNZ9v65eWU+XZ8ASp8aLJaTSkoBScGaLOCxlnSzLKyfsYugreqjaynnaiUGpNhW/ldw=="
+    }
+  ]
+}

@@ -1,9 +1,13 @@
 {
 	"galaxy.meteor.com": {
 		"env": {
-			"MONGO_URL": "mongodb://cinevault_admin:cU5uZHZ8FM4pZKdb@ac-tnssfq6-shard-00-00.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-01.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-02.e6gn66a.mongodb.net:27017/cinevault?ssl=true&replicaSet=atlas-jsvst8-shard-0&authSource=admin&appName=Cluster0",
-			"MONGO_OPLOG_URL": "mongodb://cinevault_oplog:r9lWCSpRxzGtfaI4@ac-tnssfq6-shard-00-00.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-01.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-02.e6gn66a.mongodb.net:27017/local?ssl=true&replicaSet=atlas-jsvst8-shard-0&authSource=admin&appName=Cluster0",
-			"ROOT_URL": "https://cinevault.meteorapp.com"
+			"MONGO_URL": "mongodb+srv://cinevault_admin:cU5uZHZ8FM4pZKdb@cluster0.e6gn66a.mongodb.net/cinevault?retryWrites=true&w=majority&appName=Cluster0",
+			"MONGO_OPLOG_URL": "mongodb+srv://cinevault_oplog:r9lWCSpRxzGtfaI4@cluster0.e6gn66a.mongodb.net/local?retryWrites=true&w=majority&appName=Cluster0",
+			"ROOT_URL": "https://cinevault-yacineak97.onrender.com",
+
+			"MONGO_URL_TEST": "mongodb://cinevault_admin:cU5uZHZ8FM4pZKdb@ac-tnssfq6-shard-00-00.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-01.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-02.e6gn66a.mongodb.net:27017/cinevault?ssl=true&replicaSet=atlas-jsvst8-shard-0&authSource=admin&appName=Cluster0",
+			"MONGO_OPLOG_URL_TEST": "mongodb://cinevault_oplog:r9lWCSpRxzGtfaI4@ac-tnssfq6-shard-00-00.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-01.e6gn66a.mongodb.net:27017,ac-tnssfq6-shard-00-02.e6gn66a.mongodb.net:27017/local?ssl=true&replicaSet=atlas-jsvst8-shard-0&authSource=admin&appName=Cluster0",
+			"ROOT_URL_TEST": "https://cinevault-yacineak97.onrender.com"
 		}
 	}
 }
